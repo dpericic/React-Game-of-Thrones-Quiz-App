@@ -1,33 +1,59 @@
+@font-face {
+    font-family: "GOT";
+    font-style: normal;
+    font-weight: 400;
+    src: local("GOT"), local("GOT"), url("./fonts/got.ttf") format("truetype");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
 .App {
-  text-align: center;
+    margin: auto;
+    background: white;
+    min-height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header {
+    font-family: GOT;
+    padding: 20px 5px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:focus {
+    border: none;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.add-question {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-question img {
+    width: 20px
 }
